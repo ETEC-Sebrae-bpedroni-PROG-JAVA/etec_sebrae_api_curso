@@ -2,6 +2,7 @@ package br.gov.sp.etecsebrae.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,6 +21,7 @@ public class CursoEntity implements Serializable {
 
 	private String nome;
 
+	@Column(unique = true)
 	private String sigla;
 
 	public CursoEntity() {
